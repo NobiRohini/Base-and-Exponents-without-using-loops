@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+int power(int x,int y);
+{
+    int power=1,i;
+    for(i=0;i<y;i++)
+    {
+        power=power*x;
+    }
+    return power;
+}
+int main()
+{
+    long long int base,exponent;
+    printf("enter base");
+    scanf("ll%d",&base);
+    printf("enter power");
+    scanf("ll%d",&exponent);
+    printf("%d^%d=%d",exponent,power(base,exponent));
+}
